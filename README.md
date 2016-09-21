@@ -13,12 +13,12 @@
 
 Отобразить календарь за прошлый месяц:
 
-  $calendar = new BaseCalendar()
-  echo $calendar->setPreviousMonth()->render();
+  ```php$calendar = new BaseCalendar()
+  echo $calendar->setPreviousMonth()->render();```
 
 Показать календарь без создания экземпляра:
 
-      //Установить шаблон
+      ```php//Установить шаблон
       $template = __DIR__ . '/default_view.php';
       //Объект DateTime как параметр
       $date = new DateTime();
@@ -26,4 +26,4 @@
       echo BaseCalendar::renderCalendar(array(
           'date'=> $date->modify('-2 month'),
           'template' => $template
-*      ));
+*      ));'''
