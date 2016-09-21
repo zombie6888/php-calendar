@@ -5,7 +5,7 @@
 Использование:
 
   ```
-  include __DIR__ . calendar.php
+  require_once __DIR__ . calendar.php
   ```
 
 Показать календарь на Август, 2016:
